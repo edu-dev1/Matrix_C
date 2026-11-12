@@ -37,6 +37,7 @@ int main(void){
     cout << A * B << endl;
     cout << "A · 2"<< endl;
     cout << A * 2 << endl;
+    cout << "A^T" << endl;
     cout << A.transpose() << endl;
     
 
@@ -75,6 +76,7 @@ A · 2
         2       4 
         6       8 
 }
+A^T
 {
         1       3 
         2       4 
