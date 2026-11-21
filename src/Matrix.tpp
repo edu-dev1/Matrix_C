@@ -9,9 +9,9 @@ MatrixIndexException::MatrixIndexException(const char* error) : std::out_of_rang
 
 template<typename T>
 Matrix<T>::Matrix(unsigned rows, unsigned columns) : __rows(rows), __columns(columns){
-    /*if(rows < 0 || columns < 0){
+    if(int(rows) < 0 || int(columns) < 0){
         throw MatrixIndexException("No negative indeces.");
-    }*/
+    }
     __matrix = new T*[__rows];
     for(unsigned r = 0; r < __rows; r++){
         __matrix[r] = new T[__columns];
