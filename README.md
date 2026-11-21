@@ -40,7 +40,7 @@ int main(void){
     cout << "A^T" << endl;
     cout << A.transpose() << endl;
 
-    /* Determinant */
+    /* Determinant */ (currently only available for 1x1, 2x2, or 3x3 matrices.)
     Matrix<int> C(3, 3);
     int array[9] = {1, 2, 0, -1, 3, 1, 2, 5, 2}, i = 0;
    
