@@ -39,8 +39,19 @@ int main(void){
     cout << A * 2 << endl;
     cout << "A^T" << endl;
     cout << A.transpose() << endl;
-    
 
+    /* Determinant */
+    Matrix<int> C(3, 3);
+    int array[9] = {1, 2, 0, -1, 3, 1, 2, 5, 2}, i = 0;
+   
+    for(int r = 0; r < 3; r++){
+        for(int c = 0; c < 3; c++){
+            C(r, c) = array[i++];
+        }
+    }
+    cout << 'C' << endl;
+    cout << C << endl;
+    cout << "Determinant = " << C.determinant() << endl;
     return 0;
 }
 ```
@@ -81,4 +92,11 @@ A^T
         1       3 
         2       4 
 }
+C
+{
+        1       2       0 
+        -1      3       1 
+        2       5       2 
+}
+Determinant = 9
 ```
